@@ -7,10 +7,10 @@
 
 <h2>Technologies</h2>
 
-![Node-js](https://img.shields.io/badge/-Node.js-000?style=for-the-badge&logo=node.js&logoColor=339933)
-![GraphQL](https://img.shields.io/badge/-GraphQL-000?style=for-the-badge&logo=graphql&logoColor=E10098)
-![Apollo](https://img.shields.io/badge/-Apollo-000?style=for-the-badge&logo=apollo-graphql&logoColor=311C87)
-![React](https://img.shields.io/badge/-Apollo-000?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node-js](https://img.shields.io/badge/-Node.js-FFF?style=for-the-badge&logo=node.js&logoColor=339933)
+![GraphQL](https://img.shields.io/badge/-GraphQL-FFF?style=for-the-badge&logo=graphql&logoColor=E10098)
+![Apollo](https://img.shields.io/badge/-Apollo-FFF?style=for-the-badge&logo=apollo-graphql&logoColor=311C87)
+![React](https://img.shields.io/badge/-React-FFF?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 
 <h2>Getting started</h2>
