@@ -1,10 +1,12 @@
 [
   {
     "id": 1,
+    "category": "Shop",
     "description": "Buy 10 eggs and 1 bottle of milk"
   },
   {
     "id": 2,
+    "category": "Special event",
     "description": "Buy 1 cake for Tom's birthday"
   }
 ]

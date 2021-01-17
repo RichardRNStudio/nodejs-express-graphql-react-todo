@@ -1,4 +1,4 @@
-const TODOITEMS = require("../default/db.json");
+let TODOITEMS = require("../default/db.json");
 
 const getItem = (args) => {
   const { id } = args;
@@ -11,28 +11,41 @@ const getAllItems = () => {
   return TODOITEMS;
 };
 
-const updateItem = ({ id, description }) => {
+const updateItem = ({ id, input: { category, description } }) => {
   const newTODOITEMS = TODOITEMS.map((item) => {
     if (item.id === id) {
       item.description = description;
+      item.category = category;
     }
     return item;
   });
   return newTODOITEMS.filter(({ id: toDoId }) => toDoId === id)[0];
 };
 
-const newItem = ({ input: { description } }) => {
+const addItem = ({ input: { category, description } }) => {
   const numOfToDoItems = TODOITEMS.length;
-  const newItem = { id: numOfToDoItems + 1, description };
-  TODOITEMS.push(newItem);
-  return newItem;
+  const addItem = { id: numOfToDoItems + 1, category, description };
+  TODOITEMS.push(addItem);
+  return addItem;
+};
+
+const deleteItem = ({ id: deletedId }) => {
+  const deletedItem = TODOITEMS.filter(({ id }) => {
+    return id === deletedId;
+  })[0];
+  TODOITEMS = TODOITEMS.slice(
+    TODOITEMS.findIndex(({ id }) => id === deletedId),
+    1
+  );
+  return deletedItem;
 };
 
 const resolvers = {
   item: getItem,
   items: getAllItems,
   updateItem,
-  newItem,
+  addItem,
+  deleteItem,
 };
 
 module.exports = resolvers;

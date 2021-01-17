@@ -6,14 +6,17 @@ const todoSchema = gql`
     items: [Item]
   }
   type Mutation {
-    updateItem(id: Int!, description: String!): Item
-    newItem(input: ItemInput!): Item
+    updateItem(id: Int!, input: ItemInput!): Item
+    addItem(input: ItemInput!): Item
+    deleteItem(id: Int!): Item
   }
   type Item {
     id: Int!
+    category: String!
     description: String!
   }
   input ItemInput {
+    category: String!
     description: String!
   }
 `;

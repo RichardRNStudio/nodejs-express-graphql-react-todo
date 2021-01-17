@@ -1,9 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { ApolloProvider } from "react-apollo";
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./App";
+import React from "react";
+import { ApolloProvider } from "@apollo/client";
+import ReactDOM from "react-dom";
 import client from "./apollo";
+import ToDoContainer from "./containers/ToDoContainer";
+import "./index.scss";
+
+const App = () => (
+  <main className="app">
+    <ToDoContainer />
+  </main>
+);
 
 ReactDOM.render(
   <ApolloProvider client={client}>

@@ -1,0 +1,21 @@
+.main-container {
+  height: 100vh;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+  margin: 0 auto;
+  background-color: #23bb74;
+}
+.list {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  &.table {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &.loading {
+    justify-content: center;
+    align-items: center;
+  }
+}
