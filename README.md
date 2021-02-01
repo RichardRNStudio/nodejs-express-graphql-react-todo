@@ -19,4 +19,4 @@
 ```sh
 npm install && npm run start
 ```
-The frontend should start at `localhost:3000` and the server should start at `localhost:4000/todoGraphQL`
+The frontend should start at `localhost:3000` and the server will start at `localhost:4000/todoGraphQL`
